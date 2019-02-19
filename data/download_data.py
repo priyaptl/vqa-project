@@ -26,7 +26,7 @@ os.system(
 os.system(
     'wget https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Train_mscoco.zip -P zip/')
 os.system(
-    'wget http://visualqa.org/data/mscoco/vqa/v2_Annotations_Val_mscoco.zip -P zip/')
+    'wget https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Val_mscoco.zip -P zip/')
 
 # download pre-trained glove embeddings
 os.system('wget http://nlp.stanford.edu/data/glove.6B.zip -P zip/')
@@ -35,7 +35,7 @@ os.system('wget http://nlp.stanford.edu/data/glove.6B.zip -P zip/')
 os.system(
     'wget https://imagecaption.blob.core.windows.net/imagecaption/trainval_36.zip -P zip/')
 os.system(
-    'wget https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Val_mscoco.zip -P zip/')
+    'wget https://imagecaption.blob.core.windows.net/imagecaption/test2015_36.zip -P zip/')
 
 # extract them
 os.system('unzip zip/v2_Questions_Train_mscoco.zip -d raw/')
